@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "18e15eaa-21aa-4308-981b-55a9bafaa813",
+		"name": "api",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50014494",
+		"_collection_link": "https://dipalee515-8418221.postman.co/workspace/Dipalee's-Workspace~d0f0b587-04f9-465a-8447-f953b2b552b0/collection/50014494-18e15eaa-21aa-4308-981b-55a9bafaa813?action=share&source=collection_link&creator=50014494"
+	},
+	"item": [
+		{
+			"name": "generate-key",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/generate-key",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"generate-key"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "protectedapi",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "52e73b29ae1e9a051e45715975fdf3c40317d9aa10c63ffe7b99de2249b36692",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/data",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"data"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
